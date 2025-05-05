@@ -1,9 +1,4 @@
 <div align="center">
-  <img src="icons/icon128.png" alt="EpicFree Logo" width="128" height="128" />
-  <h1>EpicFree - Browser Extension for Epic Games Free Games</h1>
-</div>
-
-<div align="center">
   <h2>🇬🇧 ENGLISH</h2>
 </div>
 

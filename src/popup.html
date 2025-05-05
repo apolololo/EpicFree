@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EpicFree</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <h1 id="extension-title">EpicFree</h1>
+        <button id="language-toggle" class="language-button" title="Change language">EN</button>
+      </div>
+      <p id="extension-subtitle" class="subtitle">Découvrez les offres actuelles et à venir</p>
+      <button id="main-epic-link" class="main-button">Voir sur Epic Games Store</button>
+    </header>
+
+    <div class="games-container">
+      <h2 id="current-games-title">Jeux gratuits actuels</h2>
+      <div id="current-games" class="games-list">
+        <div class="loading" id="loading-current">Chargement des jeux...</div>
+      </div>
+
+      <h2 id="upcoming-games-title">Prochains jeux gratuits</h2>
+      <div id="upcoming-games" class="games-list">
+        <div class="loading" id="loading-upcoming">Chargement des jeux...</div>
+      </div>
+    </div>
+
+    <footer>
+      <p id="footer-text">Développé par APO &copy; 2025</p>
+      <div class="social-icons">
+        <a href="#" id="github-link" class="social-icon" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="kofi-container">
+        <a href="#" id="kofi-link" title="Me soutenir sur Ko-fi">
+          <img height='36' src='https://storage.ko-fi.com/cdn/kofi1.png?v=6' alt='Me soutenir sur Ko-fi' />
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "EpicFree",
+  "version": "1.0",
+  "description": "Visualisez rapidement les jeux gratuits Epic Games.",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": "icons/icon.png",
+    "default_title": "EpicFree"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "host_permissions": [
+    "https://store-site-backend-static.ak.epicgames.com/*"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "apo-epic-games-notifier@example.com"
+    }
+  }
+}

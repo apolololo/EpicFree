@@ -86,7 +86,7 @@ If you appreciate this extension, you can support the developer:
 ### 📞 Contact
 For any questions or suggestions, contact the developer:
 - GitHub: [apolololo](https://github.com/apolololo)
-- Email: [contactapo21@gmail.com](mailto:contactapo21@gmail.com)
+- Twitter: [@apoftn1](https://x.com/apoftn1)
 
 ---
 
@@ -176,4 +176,4 @@ Si vous appréciez cette extension, vous pouvez soutenir le développeur :
 ### 📞 Contact
 Pour toute question ou suggestion, contactez le développeur :
 - GitHub : [apolololo](https://github.com/apolololo)
-- Email : [contactapo21@gmail.com](mailto:contactapo21@gmail.com)
+- Twitter : [@apoftn1](https://x.com/apoftn1)

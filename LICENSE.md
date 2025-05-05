@@ -20,7 +20,7 @@ Any violation of these terms may result in legal action. The creator reserves th
 - Report violations to platforms (e.g., GitHub, Chrome Web Store) for takedown.
 
 ## Contact
-For questions or to request permission for uses not covered by this license, contact the creator at [contactapo21@gmail.com](mailto:contactapo21@gmail.com).
+For questions or to request permission for uses not covered by this license, contact the creator on Twitter: [@apoftn1](https://x.com/apoftn1).
 
 ---
 
@@ -46,4 +46,4 @@ Toute violation de ces conditions peut entraîner des actions légales. Le créa
 - Signaler les violations aux plateformes (par exemple, GitHub, Chrome Web Store) pour un retrait.
 
 ## Contact
-Pour toute question ou pour demander une autorisation pour des usages non couverts par cette licence, contactez le créateur à [contactapo21@gmail.com](mailto:contactapo21@gmail.com).
+Pour toute question ou pour demander une autorisation pour des usages non couverts par cette licence, contactez le créateur sur Twitter : [@apoftn1](https://x.com/apoftn1).

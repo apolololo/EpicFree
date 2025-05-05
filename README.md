@@ -30,7 +30,7 @@
     <li><strong>Download the extension</strong>:
       <ul>
         <li>Clone this repository: <code>git clone https://github.com/apolololo/EpicFree.git</code></li>
-        <li>Or download it as a <a href="https://github.com/apolololo/EpicFree/archive/refs/heads/main.zip">ZIP file</a> and extract it</li>
+        <li>Or download the latest release from the <a href="https://github.com/apolololo/EpicFree/releases">releases page</a> and extract it</li>
       </ul>
     </li>
     <li><strong>Install the extension</strong>:
@@ -155,7 +155,7 @@
     <li><strong>Téléchargez l'extension</strong> :
       <ul>
         <li>Clonez ce dépôt : <code>git clone https://github.com/apolololo/EpicFree.git</code></li>
-        <li>Ou téléchargez-le en <a href="https://github.com/apolololo/EpicFree/archive/refs/heads/main.zip">fichier ZIP</a> et extrayez-le</li>
+        <li>Ou téléchargez la dernière version depuis la <a href="https://github.com/apolololo/EpicFree/releases">page des releases</a> et extrayez-la</li>
       </ul>
     </li>
     <li><strong>Installez l'extension</strong> :

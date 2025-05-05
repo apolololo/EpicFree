@@ -81,7 +81,7 @@ This extension is distributed under a custom license. See the [LICENSE.md](LICEN
 
 ### 💖 Support the Developer
 If you appreciate this extension, you can support the developer:
-[![Ko-fi](https://storage.ko-fi.com/cdn/kofi1.png?v=6)](https://ko-fi.com/apo__)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/apo__)
 
 ### 📞 Contact
 For any questions or suggestions, contact the developer:
@@ -171,7 +171,7 @@ Cette extension est distribuée sous une licence personnalisée. Voir le fichier
 
 ### 💖 Soutenir le développeur
 Si vous appréciez cette extension, vous pouvez soutenir le développeur :
-[![Ko-fi](https://storage.ko-fi.com/cdn/kofi1.png?v=6)](https://ko-fi.com/apo__)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/apo__)
 
 ### 📞 Contact
 Pour toute question ou suggestion, contactez le développeur :

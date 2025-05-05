@@ -3,8 +3,8 @@ Copyright Notice
 © 2025 Apo. All rights reserved.
 
 Permissions
-Personal Use: You can use EpicFree for non-commercial purposes on your personal devices.
-Promotion: You can share or promote EpicFree on social media, forums, or other platforms. Always credit the original author (Apo) and provide a link to the official GitHub repository: EpicFree.
+Personal Use: Use EpicFree for non-commercial purposes on personal devices.
+Promotion: Share or promote EpicFree on social media, forums, or other platforms. Always credit the original author (Apo) and provide a link to the official GitHub repository: EpicFree.
 Prohibitions
 Appropriation: Do not claim ownership of EpicFree or present it as your own work.
 Publication on Stores: Do not publish EpicFree (or any version of it) on any online store (e.g., Chrome Web Store, Firefox Add-ons) under your name or any other name.
@@ -24,8 +24,8 @@ Mention de Copyright
 © 2025 Apo. Tous droits réservés.
 
 Autorisations
-Utilisation Personnelle : Vous pouvez utiliser EpicFree à des fins non commerciales sur vos appareils personnels.
-Promotion : Vous pouvez partager ou promouvoir EpicFree sur les réseaux sociaux, forums ou autres plateformes. Créditez toujours l'auteur original (Apo) et fournissez un lien vers le dépôt GitHub officiel : EpicFree.
+Utilisation Personnelle : Utilisez EpicFree à des fins non commerciales sur vos appareils personnels.
+Promotion : Partagez ou promouvez EpicFree sur les réseaux sociaux, forums ou autres plateformes. Créditez toujours l'auteur original (Apo) et fournissez un lien vers le dépôt GitHub officiel : EpicFree.
 Interdictions
 Appropriation : Ne revendiquez pas la propriété d'EpicFree ou ne le présentez pas comme votre propre travail.
 Publication sur des Stores : Ne publiez pas EpicFree (ou toute version de celui-ci) sur un store en ligne (par exemple, Chrome Web Store, Firefox Add-ons) sous votre nom ou un autre nom.

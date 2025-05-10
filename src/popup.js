@@ -330,6 +330,7 @@ function initApp() {
           nextRefreshSpan.textContent = `Prochaine mise à jour: ${minutes}:${seconds.toString().padStart(2, '0')}`;
         } else {
           nextRefreshSpan.textContent = 'Mise à jour en cours...';
+          setTimeout(updateNextRefreshTime, 1000); // Retry after 1 second
         }
       }
     });

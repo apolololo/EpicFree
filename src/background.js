@@ -1,38 +1,57 @@
 // URL de l'API Epic Games pour les jeux gratuits
 const EPIC_API_URL = 'https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions';
 
+// Intervalle de rafraîchissement en millisecondes (1 minute)
+const REFRESH_INTERVAL = 60000;
+
 // Initialisation de l'extension
 chrome.runtime.onInstalled.addListener(() => {
   console.log('APO Epic Games Free Notifier installé');
 
   // Initialiser les paramètres par défaut
   chrome.storage.local.set({
-    // notificationsEnabled: true, // Removed notification setting
-    lastCheck: null, // Keep lastCheck for potential future use or manual refresh indication
+    lastCheck: null,
+    nextCheck: null,
     language: 'en' // Langue par défaut (anglais)
   });
 
   // Effectuer une première vérification immédiate
   fetchFreeGames();
+
+  // Démarrer le rafraîchissement automatique
+  startAutoRefresh();
 });
 
-// Écouter les messages de la popup (seulement pour fetch si nécessaire, mais le rafraîchissement automatique est supprimé)
+// Écouter les messages de la popup
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === 'fetchFreeGames') {
-    // Ce bloc peut être simplifié car le MIN_CHECK_INTERVAL est moins pertinent sans rafraîchissement automatique
-    // On peut simplement déclencher le fetch
     fetchFreeGames();
     sendResponse({ success: true });
-    return true; // Indique que sendResponse sera appelé de manière asynchrone
+    return true;
+  } else if (message.action === 'getNextCheckTime') {
+    chrome.storage.local.get(['nextCheck'], (data) => {
+      sendResponse({ nextCheck: data.nextCheck });
+    });
+    return true;
   }
-  // Removed updateNotificationSettings listener
 });
+
+// Démarrer le rafraîchissement automatique
+function startAutoRefresh() {
+  setInterval(() => {
+    fetchFreeGames();
+  }, REFRESH_INTERVAL);
+}
 
 // Fonction principale pour récupérer les jeux gratuits
 function fetchFreeGames() {
-  // Enregistrer l'heure de la vérification
+  // Enregistrer l'heure de la vérification et calculer la prochaine vérification
   const now = new Date();
-  chrome.storage.local.set({ lastCheck: now.toISOString() });
+  const nextCheck = new Date(now.getTime() + REFRESH_INTERVAL);
+  chrome.storage.local.set({
+    lastCheck: now.toISOString(),
+    nextCheck: nextCheck.toISOString()
+  });
 
   // Ajouter des paramètres de requête pour éviter la mise en cache
   const timestamp = now.getTime();

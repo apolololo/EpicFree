@@ -20,7 +20,6 @@ const en = {
   // Footer
   "footer_text": "Developed by APO",
   "github_title": "GitHub",
-  "kofi_title": "Support me on Ko-fi"
-};
+  "kofi_title": "Support me on Ko-fi"};
 
 export default en;

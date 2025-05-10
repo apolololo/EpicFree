@@ -43,10 +43,91 @@ header {
 
 .header-top {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10px;
   position: relative;
-  margin-bottom: 5px;
+}
+
+.language-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 0;
+  margin-left: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.language-button:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(0,120,242,0.18);
+}
+
+h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 24px;
+  color: var(--primary-color);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.header-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.refresh-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.refresh-button {
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.refresh-button:hover {
+  background-color: #3a3a3a;
+  transform: rotate(180deg);
+}
+
+.refresh-button.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.next-refresh {
+  font-size: 0.8em;
+  color: #888888;
 }
 
 h1 {

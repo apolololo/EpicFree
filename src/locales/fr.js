@@ -20,7 +20,6 @@ const fr = {
   // Pied de page
   "footer_text": "Développé par APO",
   "github_title": "GitHub",
-  "kofi_title": "Me soutenir sur Ko-fi"
-};
+  "kofi_title": "Me soutenir sur Ko-fi"};
 
 export default fr;

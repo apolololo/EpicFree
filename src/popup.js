@@ -37,6 +37,24 @@ function initApp() {
   var upcomingGamesContainer = document.getElementById('upcoming-games');
   var mainEpicLinkButton = document.getElementById('main-epic-link');
   var languageToggleButton = document.getElementById('language-toggle');
+  var refreshButton = document.getElementById('refresh-button');
+  var nextRefreshSpan = document.getElementById('next-refresh');
+
+  // Initialiser le compte à rebours
+  updateNextRefreshTime();
+  setInterval(updateNextRefreshTime, 1000);
+
+  // Ajouter l'écouteur d'événement pour le bouton de rafraîchissement
+  if (refreshButton) {
+    refreshButton.addEventListener('click', () => {
+      refreshButton.classList.add('spinning');
+      chrome.runtime.sendMessage({ action: 'fetchFreeGames' }, () => {
+        setTimeout(() => {
+          refreshButton.classList.remove('spinning');
+        }, 1000);
+      });
+    });
+  }
 
   // Vérifier les éléments essentiels
   if (!currentGamesContainer || !upcomingGamesContainer || !mainEpicLinkButton) {
@@ -297,6 +315,25 @@ function initApp() {
       }
   }
 
+
+  // Fonction pour mettre à jour le compte à rebours
+  function updateNextRefreshTime() {
+    chrome.runtime.sendMessage({ action: 'getNextCheckTime' }, (response) => {
+      if (response && response.nextCheck) {
+        const nextCheck = new Date(response.nextCheck);
+        const now = new Date();
+        const timeLeft = nextCheck - now;
+
+        if (timeLeft > 0) {
+          const minutes = Math.floor(timeLeft / 60000);
+          const seconds = Math.floor((timeLeft % 60000) / 1000);
+          nextRefreshSpan.textContent = `Prochaine mise à jour: ${minutes}:${seconds.toString().padStart(2, '0')}`;
+        } else {
+          nextRefreshSpan.textContent = 'Mise à jour en cours...';
+        }
+      }
+    });
+  }
 
   // Fonction pour appliquer les traductions à l'interface
   function applyTranslations() {
